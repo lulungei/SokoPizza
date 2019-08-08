@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Soko Pizza Menu</title>
+    </head>
+    <body>
+        <form action='/handle_order' method='POST'>
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Order</button>
+        </form>
+        {% if receipt %}
+            <pre>{{receipt}}</pre>
+
+        {% endif %}
+        
+    </body>
+</html>
