@@ -37,5 +37,7 @@ POST `http://127.0.0.1/api/v1/size/`
   "price": "1200.00"  
 }
 `
+## PS:
+The api's url is defined in the urls.py global file. I chose to use different a view file for the rest framework view **api_views.py** to maintain a level of structure in my code.
 ## Add sizes and toppings using django admin panel:
 Read the ReadMe file in the ReadMe folder.
